@@ -1,100 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!--Name: Nguyễn Quang Linh - mssv: 19521755-->
-        <!--Date: -->
-        <!--Version: -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>title</title>
-        <link rel="stylesheet" href="index.css">
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    </head>
-    <body>
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="mainNav" >
-                    <div class="container">
-                        <a href="" class="navbar-brand ">
-                            <img src="./assets/img/navbar-logo.svg" alt="">
-                        </a>
-                        <button class="navbar-toggler " type="button" 
-                        data-toggle="collapse" data-target="#navbarResponsive">
-                            Menu 
-                            <i class="fas fa-bars ml-1"></i>
-                        </button>
-        
-                        <div  class="collapse navbar-collapse" id="navbarResponsive">
-                            <ul style="margin-left: auto;" class="navbar-nav">
-                                <li class="nav-item"><a class="nav-link " href="#home">Home</a></li>
-                                <li class="nav-item"><a class="nav-link " href="#about">About</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-                                <li class="nav-item"><a class="nav-link " href="#skill">Skill</a></li>
-                                <li class="nav-item"><a class="nav-link " href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-        </nav>
-        <!--  home -->
-        <div>
-            <div class="container-fluid " style="padding: 0;">
-                <img 
-                class="img-fluid"
-                src="https://static.wixstatic.com/media/82fcd3_a1a4a4fd8e2b4b0295b547356b038220~mv2_d_6405_4048_s_4_2.jpg/v1/fill/w_1899,h_1295,al_t,q_90,usm_0.66_1.00_0.01/82fcd3_a1a4a4fd8e2b4b0295b547356b038220~mv2_d_6405_4048_s_4_2.webp" alt="">
+
+<head>
+    <!--Name: Nguyễn Quang Linh - mssv: 19521755-->
+    <!--Date: -->
+    <!--Version: -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>title</title>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="mainNav">
+        <div class="container">
+            <a href="" class="navbar-brand ">
+                <img src="./assets/img/navbar-logo.svg" alt="">
+            </a>
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                Menu
+                <i class="fas fa-bars ml-1"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul style="margin-left: auto;" class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link " href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#service">service</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#portfolio">portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
-        <!--about   -->
+    </nav>
+    <!--  home -->
+    <div>
+        <div class="container-fluid " style="padding: 0;">
+            <img class="img-fluid"
+                src="https://static.wixstatic.com/media/82fcd3_a1a4a4fd8e2b4b0295b547356b038220~mv2_d_6405_4048_s_4_2.jpg/v1/fill/w_1899,h_1295,al_t,q_90,usm_0.66_1.00_0.01/82fcd3_a1a4a4fd8e2b4b0295b547356b038220~mv2_d_6405_4048_s_4_2.webp"
+                alt="">
+        </div>
+    </div>
+    <!--about   -->
 
-        <br id="about">
+    <br id="about">
 
-        <section class="page-section "> 
-            <div class="container">
-                <h1 class="my-5">ABOUT</h1>
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="img-fluid "
-                        src="https://static.wixstatic.com/media/82fcd3_df58387c544247c99edc29d5b33c7e12~mv2_d_3384_3648_s_4_2.jpg/v1/fill/w_850,h_1010,al_c,q_85,usm_0.66_1.00_0.01/82fcd3_df58387c544247c99edc29d5b33c7e12~mv2_d_3384_3648_s_4_2.webp" alt="">         
+    <section class="page-section ">
+        <div class="container">
+            <h1 class="my-5">ABOUT</h1>
+            <div class="row">
+                <div class="col-md-6 animated fadeInLeft wow">
+                    <img class="img-fluid "
+                        src="https://static.wixstatic.com/media/82fcd3_df58387c544247c99edc29d5b33c7e12~mv2_d_3384_3648_s_4_2.jpg/v1/fill/w_850,h_1010,al_c,q_85,usm_0.66_1.00_0.01/82fcd3_df58387c544247c99edc29d5b33c7e12~mv2_d_3384_3648_s_4_2.webp"
+                        alt="">
+                </div>
+                <div class="col-md-6 text-justify col-sm-8 animated fadeInRight wow" style="margin: auto auto;">
+                    <h3 class="font-weight-bold page-subheading mb-5">Jeremy Avens is the author of the successful book
+                        "Big Boss, Little Boss", and advises to organizations on how to create a motivating, creative
+                        and educating workplace.</h3>
+                    <p class="font-weight-normal page-subtitle text-muted"> Jeremy Avens is the author of the successful
+                        book "Big Boss, Little Boss", and advises to organizations on how to create a motivating,
+                        creative and educating workplace.
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
+                        or double click me to add your own content and make changes to the font.
+                        I’m a great place for you to tell a story and let your users know a little more about you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- service -->
+
+    <br id="service">
+    <section class="page-section service-container">
+        <div class="container ">
+            <div class="service-headding text-center">
+                <h5 class="page-subheading text-uppercase mt-5  animated fadeInRight wow">NGÀNH NGHỀ NỔI BẬT ĐANG PHỤC VỤ </h5>
+                <h3 class="page-subtitle text-muted mb-5 animated fadeInLeft wow">1500+ mẫu thiết kế web - app mobile chuyên nghiệp, đáp ứng đầy
+                    đủ mọi nhu cầu ngành nghề kinh doanh của khách hàng; IBCO.TECH triển khai nhanh chóng - bảo mật tối
+                    đa - kết nối vận chuyển & thanh toán online cùng hàng loạt tiện ích khác.</h3>
+            </div>
+            <div class="row text-center industries-row ">
+                <div class="col-4 col-lg-3 animated fadeInUp wow " data-wow-delay="0.5s">
+                    <div class="industries-items">
+                        <a href="" class="industries-link">
+                            <img class="industries-items-src"
+                                src=" https://ibco.tech/Thumb.ashx?s=80&file=/UploadImages/website/icons/khach-san-khu-ngh-duong.png"
+                                alt="">
+                            <h3 class="industries-item-title">Khách Sạn</h3>
+                        </a>
                     </div>
-                    <div class="col-md-6 text-justify col-sm-8 " style="margin: auto auto;">
-                        <h3 class="font-weight-bold page-subheading mb-5">Jeremy Avens is the author of the successful book "Big Boss, Little Boss", and advises to organizations on how to create a motivating, creative and educating workplace.</h3>
-                        <p class="font-weight-normal page-subtitle text-muted"> Jeremy Avens is the author of the successful book "Big Boss, Little Boss", and advises to organizations on how to create a motivating, creative and educating workplace.   
-                            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
-                             I’m a great place for you to tell a story and let your users know a little more about you.
-                        </p>
+                </div>
+                <div class="col-4 col-lg-3 animated fadeInUp wow " data-wow-delay="0.7s">
+                    <div class="industries-items">
+                        <a href="" class="industries-link">
+                            <img class="industries-items-src"
+                                src="https://ibco.tech/Thumb.ashx?s=80&file=/UploadImages/website/icons/ban-hang.png"
+                                alt="">
+                            <h3 class="industries-item-title">Bán Hàng</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3 animated fadeInUp wow " data-wow-delay="1s">
+                    <div class="industries-items">
+                        <a href="" class="industries-link">
+                            <img class="industries-items-src"
+                                src="https://ibco.tech/Thumb.ashx?s=80&file=/UploadImages/website/icons/bat-dong-san.png"
+                                alt="">
+                            <h3 class="industries-item-title">Bát Động Sản</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3 animated fadeInUp wow " data-wow-delay="1.3s">
+                    <div class="industries-items">
+                        <a href="" class="industries-link">
+                            <img class="industries-items-src"
+                                src="https://ibco.tech/Thumb.ashx?s=80&file=/UploadImages/website/icons/lam-dep.png"
+                                alt="">
+                            <h3 class="industries-item-title">Mỹ Phẩm</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3 animated fadeInUp wow " data-wow-delay="0.5s">
+                    <div class="industries-items">
+                        <a href="" class="industries-link">
+                            <img class="industries-items-src"
+                                src="https://ibco.tech/Thumb.ashx?s=80&file=/UploadImages/website/icons/gioi-thieu-cong-ty.png"
+                                alt="">
+                            <h3 class="industries-item-title">Doanh Nghiệp</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3 animated fadeInUp wow " data-wow-delay="0.7s">
+                    <div class="industries-items">
+                        <a href="" class="industries-link">
+                            <img class="industries-items-src"
+                                src="https://ibco.tech/Thumb.ashx?s=80&file=/UploadImages/website/icons/thoi-trang.png"
+                                alt="">
+                            <h3 class="industries-item-title">Thời trang</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3 animated fadeInUp wow " data-wow-delay="1s">
+                    <div class="industries-items">
+                        <a href="" class="industries-link">
+                            <img class="industries-items-src"
+                                src="https://ibco.tech/Thumb.ashx?s=80&file=/UploadImages/website/icons/nha-hang.png"
+                                alt="">
+                            <h3 class="industries-item-title">Nhà Hàng</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3 animated fadeInUp wow " data-wow-delay="1.3s">
+                    <div class="industries-items">
+                        <a href="" class="industries-link">
+                            <img class="industries-items-src"
+                                src="https://ibco.tech/Thumb.ashx?s=80&file=/UploadImages/website/icons/lam-dep.png"
+                                alt="">
+                            <h3 class="industries-item-title">Làm Đẹp</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3 animated fadeInUp wow " data-wow-delay="0.5s">
+                    <div class="industries-items">
+                        <a href="" class="industries-link">
+                            <img class="industries-items-src"
+                                src=" https://ibco.tech/Thumb.ashx?s=80&file=/UploadImages/website/icons/khach-san-khu-ngh-duong.png"
+                                alt="">
+                            <h3 class="industries-item-title">Khách Sạn</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3 animated fadeInUp wow " data-wow-delay="0.7s">
+                    <div class="industries-items">
+                        <a href="" class="industries-link">
+                            <img class="industries-items-src"
+                                src="https://ibco.tech/Thumb.ashx?s=80&file=/UploadImages/website/icons/ban-hang.png"
+                                alt="">
+                            <h3 class="industries-item-title">Bán Hàng</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3 animated fadeInUp wow " data-wow-delay="1s">
+                    <div class="industries-items">
+                        <a href="" class="industries-link">
+                            <img class="industries-items-src"
+                                src="https://ibco.tech/Thumb.ashx?s=80&file=/UploadImages/website/icons/bat-dong-san.png"
+                                alt="">
+                            <h3 class="industries-item-title">Bát Động Sản</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3 animated fadeInUp wow " data-wow-delay="1.3s">
+                    <div class="industries-items">
+                        <a href="" class="industries-link">
+                            <img class="industries-items-src"
+                                src="https://ibco.tech/Thumb.ashx?s=80&file=/UploadImages/website/icons/lam-dep.png"
+                                alt="">
+                            <h3 class="industries-item-title">Mỹ Phẩm</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3 animated fadeInUp wow " data-wow-delay="0.5s">
+                    <div class="industries-items">
+                        <a href="" class="industries-link">
+                            <img class="industries-items-src"
+                                src="https://ibco.tech/Thumb.ashx?s=80&file=/UploadImages/website/icons/gioi-thieu-cong-ty.png"
+                                alt="">
+                            <h3 class="industries-item-title">Doanh Nghiệp</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3 animated fadeInUp wow " data-wow-delay="0.7s">
+                    <div class="industries-items">
+                        <a href="" class="industries-link">
+                            <img class="industries-items-src"
+                                src="https://ibco.tech/Thumb.ashx?s=80&file=/UploadImages/website/icons/thoi-trang.png"
+                                alt="">
+                            <h3 class="industries-item-title">Thời trang</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3 animated fadeInUp wow " data-wow-delay="1s">
+                    <div class="industries-items">
+                        <a href="" class="industries-link">
+                            <img class="industries-items-src"
+                                src="https://ibco.tech/Thumb.ashx?s=80&file=/UploadImages/website/icons/nha-hang.png"
+                                alt="">
+                            <h3 class="industries-item-title">Nhà Hàng</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3 animated fadeInUp wow " data-wow-delay="1.3s">
+                    <div class="industries-items">
+                        <a href="" class="industries-link">
+                            <img class="industries-items-src"
+                                src="https://ibco.tech/Thumb.ashx?s=80&file=/UploadImages/website/icons/lam-dep.png"
+                                alt="">
+                            <h3 class="industries-item-title">Làm Đẹp</h3>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="#" class="btn btn-primary my-5">Xem thêm</a>
+        </div>
+    </section>
+
+    <!-- portfolio -->
+    <br id="portfolio" >
+    <section class="page-section">
+        <div class="container">
+            <div class="page-headding text-center my-5">
+                <h3 class="page-subheading">THAM KHẢO MẪU BÁN HÀNG</h3>
+                <p class="page-subtitle">Những mẫu thiết kế đươc ưa chuộng nhất trong năm 2021</p>
+            </div>
+            <div class="row ">
+                <div class="col-sm-12 col-md-4 card">
+                    <div class="box box1"></div>
+                    <div class="card-body">
+                    <div class=""></div>
+                    <h6 class="card-title text-center">Mẫu Website Bán Hàng ZANADO</h6>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 card">
+                    <div class="box box2"></div>
+                    <div class="card-body">
+                    <div class=""></div>
+                    <h6 class="card-title text-center">Mẫu Website M2 VIỆT NAM</h6>
+                        <p class="card-text"></p>
+                    </div>
+                </div><div class="col-sm-12 col-md-4 card">
+                    <div class="box box3"></div>
+                    <div class="card-body">
+                    <div class=""></div>
+                    <h6 class="card-title text-center">Mẫu Website Thời Trang YODY</h6>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 card">
+                    <div class="box box1"></div>
+                    <div class="card-body">
+                    <div class=""></div>
+                    <h6 class="card-title text-center">Mẫu Website Bán Hàng ZANADO</h6>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 card">
+                    <div class="box box2"></div>
+                    <div class="card-body">
+                    <div class=""></div>
+                    <h6 class="card-title text-center">Mẫu Website M2 VIỆT NAM</h6>
+                        <p class="card-text"></p>
+                    </div>
+                </div><div class="col-sm-12 col-md-4 card">
+                    <div class="box box3"></div>
+                    <div class="card-body">
+                    <div class=""></div>
+                    <h6 class="card-title text-center">Mẫu Website Thời Trang YODY</h6>
+                        <p class="card-text"></p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>    
 
-        <!-- publication -->
 
-        <br id="publications">
-        <section class="page-section">
-            <div class="">
 
-            </div>
-        </section>
 
-        
 
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
-              <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="./index.js"></script>
-    </body>
+
+
+
+    <!-- Bootstrap core JS-->
+    <!-- JQuery -->
+    <script>
+        $(document).ready(function () {
+            new WOW().init();
+        });
+    </script>
+   
+</body>
+
 </html>
-
