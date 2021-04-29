@@ -23,3 +23,12 @@ $(document).ready(function(){
     });
   });
 
+//change grid
+// $('#change-grid').click(function(){
+//  $('.item-1').css({"grid-column":"1", "grid-row":"span 4"});
+//  $('.item-2').css({"grid-column":"2/4", "grid-row":"span 1"});
+//  $('.item-3').css({"grid-column":"4/5", "grid-row":"span 4"});
+//  $('.item-4').css({"grid-column":"2/3", "grid-row":"span 1"});
+//  $('.item-5').css({"grid-column":"3/4", "grid-row":"span 1"});
+//  $('.item-6').css({"grid-column":"2/4", "grid-row":"span 1"});
+// });
